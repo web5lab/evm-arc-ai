@@ -1,13 +1,12 @@
 
 import { Bot, ChevronRight, ArrowRight, Sparkles, Shield, Users, Bitcoin, Cpu, Zap } from 'lucide-react';
 import web5labLogo from "../assets/web5lab.png"
-import logo from "../assets/logo.png"
-import ethLogo from "../assets/ethlogo.png"
-import bnbLogo from "../assets/bnb.png"
-import probotics from "../assets/probotics.png"
+import bnbLogo from '../assets/bnb.png'
+import avaLogo from '../assets/avax.svg'
+import baseLogo from '../assets/base.png'
 
 export function Hero() {
-  const parteners = [{img:web5labLogo}, {img:ethLogo}, {img:bnbLogo}, {img:probotics}]
+  const parteners = [{img:avaLogo}, {img:web5labLogo}, {img:bnbLogo}, {img:baseLogo}]
   return (
     <div className="relative min-h-[calc(100vh-4rem)] sm:min-h-screen overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Animated Background Elements */}
@@ -23,9 +22,7 @@ export function Hero() {
         <div className="absolute top-[15%] left-[10%] sm:left-[15%] animate-float-slow">
           <Bitcoin className="w-16 h-16 text-orange-400/30" />
         </div>
-        <div className="absolute top-[35%] right-[10%] sm:right-[20%] animate-float-delayed">
-          <Cpu className="w-12 h-12 text-orange-500/30" />
-        </div>
+  
         <div className="absolute bottom-[25%] left-[15%] sm:left-[25%] animate-float-slow animation-delay-400">
           <Zap className="w-10 h-10 text-orange-600/30" />
         </div>
@@ -58,7 +55,7 @@ export function Hero() {
         <div className="max-w-6xl mx-auto text-center px-4">
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 sm:mb-8 animate-fade-in animation-delay-200">
             <span className="inline-block bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 bg-clip-text text-transparent animate-gradient-x">
-              Next-Gen AI Chat
+              Next-Gen AI Chat Bot
             </span>
             <br />
             <span className="inline-block mt-2 relative">

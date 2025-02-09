@@ -24,8 +24,6 @@ export function Navbar() {
             <NavLink to="/try-ai">Try AI</NavLink>
             <NavLink to="/contact">Contact</NavLink>
             <NavLink to="/integrations">Integrations</NavLink>
-            <NavLink to="/docs">Documentation</NavLink>
-            <NavLink to="/dashboard">Dashboard</NavLink>
           </div>
 
           {/* Desktop CTA */}
@@ -36,18 +34,6 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="group relative"
             >
-              {/* Price Tooltip */}
-              <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="flex items-center gap-2">
-                  <span className="flex items-center gap-1">
-                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                    $0.015
-                  </span>
-                  <span className="text-green-400">+5.2%</span>
-                </div>
-                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45" />
-              </div>
-              
               {/* Button */}
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 animate-pulse" />
@@ -87,7 +73,7 @@ export function Navbar() {
                 className="relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-orange-500/20 animate-pulse" />
-                <button className="relative w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-3 rounded-full hover:from-orange-600 hover:to-orange-700 transition-all duration-300">
+                <button className="relative w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-3 rounded-full ">
                   <div className="flex items-center justify-center gap-3">
                     <span className="font-medium">Buy CAI</span>
                     <div className="w-px h-4 bg-white/20" />
@@ -102,8 +88,6 @@ export function Navbar() {
               <NavLink to="/try-ai">Try AI</NavLink>
               <NavLink to="/contact">Contact</NavLink>
               <NavLink to="/integrations">Integrations</NavLink>
-              <NavLink to="/docs">Documentation</NavLink>
-              <NavLink to="/dashboard">Dashboard</NavLink>
             </div>
             <div className="mt-6 flex flex-col space-y-4">
               <Link

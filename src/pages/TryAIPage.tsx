@@ -120,7 +120,7 @@ export function TryAIPage() {
   };
 
   return (
-    <div className="min-h-screen mt-16 bg-white flex flex-col md:flex-row">
+    <div className=" mt-[68px] bg-white flex flex-col md:flex-row">
         <Navbar />
       {/* Sidebar */}
       <div className="md:w-[280px] bg-gray-50 border-r border-gray-200 flex flex-col h-auto md:h-[calc(100vh-4rem)] order-2 md:order-1">
