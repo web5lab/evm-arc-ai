@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, MessageSquare, Send, Bot, Clock, Globe2, Github, Twitter, Instagram as Telegram, Disc as Discord, Linkedin } from 'lucide-react';
+import { Navbar } from '../components/Navbar';
 
 const PROJECT_TYPES = [
   { id: 'exchange', name: 'Cryptocurrency Exchange' },
@@ -62,6 +63,7 @@ export function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Hero Section */}
+      <Navbar />
       <div className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container mx-auto px-6 relative">

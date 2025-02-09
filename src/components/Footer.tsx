@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bot } from 'lucide-react';
-
+import logo from "../assets/logo.png"
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Brand */}
           <div className="flex items-center gap-2">
-            <Bot className="w-8 h-8 text-orange-500" />
+          <img src={logo} alt="" className='w-12 h-12' />
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-400">
               ARCAI
             </span>

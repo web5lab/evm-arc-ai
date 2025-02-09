@@ -1,14 +1,19 @@
 import React from 'react';
 import { Hexagon } from 'lucide-react';
-
+import ethLogo from '../assets/ethlogo.png'
+import bnbLogo from '../assets/bnb.png'
+import polLogo from '../assets/maticLogo.png'
+import avaLogo from '../assets/avax.svg'
+import arbiLogo from '../assets/arb.svg'
+import baseLogo from '../assets/base.png'
 export function Networks() {
   const networks = [
-    { name: 'Ethereum', color: 'from-blue-500 to-blue-600' },
-    { name: 'Binance Smart Chain', color: 'from-yellow-500 to-yellow-600' },
-    { name: 'Polygon', color: 'from-purple-500 to-purple-600' },
-    { name: 'Solana', color: 'from-green-500 to-green-600' },
-    { name: 'Avalanche', color: 'from-red-500 to-red-600' },
-    { name: 'Arbitrum', color: 'from-indigo-500 to-indigo-600' }
+    { name: 'Ethereum', img:ethLogo },
+    { name: 'BSC',img:bnbLogo },
+    { name: 'Polygon', img:polLogo },
+    { name: 'Base',img:baseLogo },
+    { name: 'Avalanche',img:avaLogo },
+    { name: 'Arbitrum' ,img:arbiLogo}
   ];
 
   return (
@@ -22,8 +27,8 @@ export function Networks() {
           <div key={index} className="group relative">
             <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl" />
             <div className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group-hover:-translate-y-1">
-              <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${network.color} rounded-xl flex items-center justify-center`}>
-                <Hexagon className="w-8 h-8 text-white" />
+              <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br rounded-full flex items-center justify-center`}>
+                <img src={network.img} alt="" className='w-16 h-16 rounded-full' />
               </div>
               <h3 className="font-semibold text-gray-900">{network.name}</h3>
             </div>

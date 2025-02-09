@@ -16,7 +16,7 @@ function CodeBlock({ code, language }: { code: string; language: string }) {
         {language}
       </div>
       <div className="bg-gray-900 rounded-lg p-4 pr-12">
-        <code className={`text-${language === 'bash' ? 'orange' : language === 'typescript' ? 'green' : 'blue'}-400`}>
+        <code className={`text-${language === 'bash' ? 'orange-400' : language === 'typescript' ? 'green-400' : 'white'}`}>
           {code}
         </code>
         <button
@@ -63,15 +63,15 @@ export function Integration() {
           <div className="space-y-4">
             <CodeBlock
               language="bash"
-              code="npm install @ARCAI/chat-widget"
+              code="npm install @cryptoai/chat-widget"
             />
             <CodeBlock
               language="typescript"
-              code={`import { ARCAIChat } from '@ARCAI/chat-widget';
+              code={`import { CryptoAIChat } from '@cryptoai/chat-widget';
 
 function App() {
   return (
-    <ARCAIChat
+    <CryptoAIChat
       apiKey="your_api_key"
       theme="light"
       position="bottom-right"
@@ -94,10 +94,10 @@ function App() {
           <div className="space-y-4">
             <CodeBlock
               language="html"
-              code={`<script src="https://cdn.ARCAI.com/chat-widget.js"></script>
+              code={`<script src="https://cdn.cryptoai.com/chat-widget.js"></script>
 
 <script>
-  ARCAI.init({
+  CryptoAI.init({
     apiKey: 'your_api_key',
     theme: 'light',
     position: 'bottom-right'
@@ -119,7 +119,7 @@ function App() {
           <div className="space-y-4">
             <CodeBlock
               language="bash"
-              code={`curl -X POST https://api.ARCAI.com/v1/chat \\
+              code={`curl -X POST https://api.cryptoai.com/v1/chat \\
   -H 'Authorization: Bearer your_api_key' \\
   -H 'Content-Type: application/json' \\
   -d '{"message": "How do I buy tokens?", "context": "purchase"}'`}

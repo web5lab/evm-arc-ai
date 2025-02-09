@@ -5,6 +5,7 @@ import { useChats } from '../hooks/useChats';
 import { useSettings } from '../hooks/useSettings';
 import { SettingsModal } from '../components/SettingsModal';
 import { Message, SpeedCommand } from '../types/chat';
+import { Navbar } from '../components/Navbar';
 
 const SPEED_COMMANDS: SpeedCommand[] = [
   { command: '/price', description: 'Get current token price' },
@@ -120,6 +121,7 @@ export function TryAIPage() {
 
   return (
     <div className="min-h-screen mt-16 bg-white flex flex-col md:flex-row">
+        <Navbar />
       {/* Sidebar */}
       <div className="md:w-[280px] bg-gray-50 border-r border-gray-200 flex flex-col h-auto md:h-[calc(100vh-4rem)] order-2 md:order-1">
         <div className="p-4 mb-2">

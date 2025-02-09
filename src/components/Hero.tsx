@@ -1,7 +1,13 @@
-import React from 'react';
+
 import { Bot, ChevronRight, ArrowRight, Sparkles, Shield, Users, Bitcoin, Cpu, Zap } from 'lucide-react';
+import web5labLogo from "../assets/web5lab.png"
+import logo from "../assets/logo.png"
+import ethLogo from "../assets/ethlogo.png"
+import bnbLogo from "../assets/bnb.png"
+import probotics from "../assets/probotics.png"
 
 export function Hero() {
+  const parteners = [{img:web5labLogo}, {img:ethLogo}, {img:bnbLogo}, {img:probotics}]
   return (
     <div className="relative min-h-[calc(100vh-4rem)] sm:min-h-screen overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Animated Background Elements */}
@@ -32,9 +38,9 @@ export function Hero() {
           <div className="group bg-white/80 backdrop-blur-sm px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl border border-orange-100/50 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex -space-x-2">
-                {[...Array(4)].map((_, i) => (
+                {parteners.map((_, i) => (
                   <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 border-2 border-white flex items-center justify-center">
-                    <Shield className="w-4 h-4 text-white" />
+                    <img src={_.img} alt="" className='w-8 bg-white rounded-full h-8' />
                   </div>
                 ))}
               </div>
